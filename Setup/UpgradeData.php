@@ -1,4 +1,3 @@
-<?php
 /**
  * Copyright © 2020 Chazki. All rights reserved.
  *
@@ -66,69 +65,69 @@ class UpgradeData implements UpgradeDataInterface
             $customerSetup = $this->customerSetupFactory->create(['setup' => $setup]);
 
             // Reference Text Field
-//            $customerSetup->addAttribute('customer_address', HelperData::REFERENCE_ATTRIBUTE_CODE, [
-//                'label' => 'Reference Text',
-//                'input' => 'text',
-//                'type' => Table::TYPE_TEXT,
-//                'source' => '',
-//                'required' => false,
-//                'position' => 333,
-//                'visible' => true,
-//                'system' => false,
-//                'is_used_in_grid' => false,
-//                'is_visible_in_grid' => false,
-//                'is_filterable_in_grid' => false,
-//                'is_searchable_in_grid' => false,
-//                'backend' => ''
-//            ]);
-//
-//            $attribute = $customerSetup->getEavConfig()
-//                ->getAttribute('customer_address', HelperData::REFERENCE_ATTRIBUTE_CODE)
-//                ->addData(
-//                    [
-//                        'used_in_forms' => [
-//                            'adminhtml_customer_address',
-//                            'adminhtml_customer',
-//                            'customer_address_edit',
-//                            'customer_register_address',
-//                            'customer_address',
-//                        ]
-//                    ]
-//                );
-//            $attribute->save();
+            $customerSetup->addAttribute('customer_address', HelperData::REFERENCE_ATTRIBUTE_CODE, [
+                'label' => 'Reference Text',
+                'input' => 'text',
+                'type' => Table::TYPE_TEXT,
+                'source' => '',
+                'required' => false,
+                'position' => 333,
+                'visible' => true,
+                'system' => false,
+                'is_used_in_grid' => false,
+                'is_visible_in_grid' => false,
+                'is_filterable_in_grid' => false,
+                'is_searchable_in_grid' => false,
+                'backend' => ''
+            ]);
+
+            $attribute = $customerSetup->getEavConfig()
+                ->getAttribute('customer_address', HelperData::REFERENCE_ATTRIBUTE_CODE)
+                ->addData(
+                    [
+                        'used_in_forms' => [
+                            'adminhtml_customer_address',
+                            'adminhtml_customer',
+                            'customer_address_edit',
+                            'customer_register_address',
+                            'customer_address',
+                        ]
+                    ]
+                );
+            $attribute->save();
 
             // Ruc Number Field
-//            $customerSetup->addAttribute('customer_address', HelperData::RUC_NUMBER_ATTRIBUTE_CODE, [
-//                'label' => 'Ruc Number',
-//                'input' => 'text',
-//                'type' => Table::TYPE_TEXT,
-//                'source' => '',
-//                'required' => false,
-//                'position' => 343,
-//                'visible' => true,
-//                'system' => false,
-//                'is_used_in_grid' => false,
-//                'is_visible_in_grid' => false,
-//                'is_filterable_in_grid' => false,
-//                'is_searchable_in_grid' => false,
-//                'backend' => ''
-//            ]);
-//
-//            $attribute = $customerSetup->getEavConfig()
-//                ->getAttribute('customer_address', HelperData::RUC_NUMBER_ATTRIBUTE_CODE)
-//                ->addData(
-//                    [
-//                        'used_in_forms' => [
-//                            'adminhtml_customer_address',
-//                            'adminhtml_customer',
-//                            'customer_address_edit',
-//                            'customer_register_address',
-//                            'customer_address',
-//                        ]
-//                    ]
-//                );
-//
-//            $attribute->save();
+            $customerSetup->addAttribute('customer_address', HelperData::RUC_NUMBER_ATTRIBUTE_CODE, [
+                'label' => 'Ruc Number',
+                'input' => 'text',
+                'type' => Table::TYPE_TEXT,
+                'source' => '',
+                'required' => false,
+                'position' => 343,
+                'visible' => true,
+                'system' => false,
+                'is_used_in_grid' => false,
+                'is_visible_in_grid' => false,
+                'is_filterable_in_grid' => false,
+                'is_searchable_in_grid' => false,
+                'backend' => ''
+            ]);
+
+            $attribute = $customerSetup->getEavConfig()
+                ->getAttribute('customer_address', HelperData::RUC_NUMBER_ATTRIBUTE_CODE)
+                ->addData(
+                    [
+                        'used_in_forms' => [
+                            'adminhtml_customer_address',
+                            'adminhtml_customer',
+                            'customer_address_edit',
+                            'customer_register_address',
+                            'customer_address',
+                        ]
+                    ]
+                );
+
+            $attribute->save();
 
 
             // Reference Address Field
