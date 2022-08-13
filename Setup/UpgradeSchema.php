@@ -1,4 +1,3 @@
-<?php
 /**
  * Copyright © 2020 Chazki. All rights reserved.
  *
@@ -39,58 +38,58 @@ class UpgradeSchema implements UpgradeSchemaInterface
             $connection = $setup->getConnection();
 
             // Reference Code Field
-//            $connection->addColumn(
-//                $setup->getTable('quote_address'),
-//                HelperData::REFERENCE_ATTRIBUTE_CODE,
-//                [
-//                    'type' => Table::TYPE_TEXT,
-//                    'nullable' => true,
-//                    'default' => null,
-//                    'length' => 255,
-//                    'comment' => 'Reference Text',
-//                    'after' => 'fax'
-//                ]
-//            );
-//
-//            $connection->addColumn(
-//                $setup->getTable('sales_order_address'),
-//                HelperData::REFERENCE_ATTRIBUTE_CODE,
-//                [
-//                    'type' => Table::TYPE_TEXT,
-//                    'nullable' => true,
-//                    'default' => null,
-//                    'length' => 255,
-//                    'comment' => 'Reference Text',
-//                    'after' => 'fax'
-//                ]
-//            );
+            $connection->addColumn(
+                $setup->getTable('quote_address'),
+                HelperData::REFERENCE_ATTRIBUTE_CODE,
+                [
+                    'type' => Table::TYPE_TEXT,
+                    'nullable' => true,
+                    'default' => null,
+                    'length' => 255,
+                    'comment' => 'Reference Text',
+                    'after' => 'fax'
+                ]
+            );
+
+            $connection->addColumn(
+                $setup->getTable('sales_order_address'),
+                HelperData::REFERENCE_ATTRIBUTE_CODE,
+                [
+                    'type' => Table::TYPE_TEXT,
+                    'nullable' => true,
+                    'default' => null,
+                    'length' => 255,
+                    'comment' => 'Reference Text',
+                    'after' => 'fax'
+                ]
+            );
 
 //            // Ruc Number Field
-//            $connection->addColumn(
-//                $setup->getTable('quote_address'),
-//                HelperData::RUC_NUMBER_ATTRIBUTE_CODE,
-//                [
-//                    'type' => Table::TYPE_TEXT,
-//                    'nullable' => true,
-//                    'default' => null,
-//                    'length' => 255,
-//                    'comment' => 'Ruc Number',
-//                    'after' => 'reference_note'
-//                ]
-//            );
-//
-//            $connection->addColumn(
-//                $setup->getTable('sales_order_address'),
-//                HelperData::RUC_NUMBER_ATTRIBUTE_CODE,
-//                [
-//                    'type' => Table::TYPE_TEXT,
-//                    'nullable' => true,
-//                    'default' => null,
-//                    'length' => 255,
-//                    'comment' => 'Ruc Number',
-//                    'after' => 'reference_note'
-//                ]
-//            );
+            $connection->addColumn(
+                $setup->getTable('quote_address'),
+                HelperData::RUC_NUMBER_ATTRIBUTE_CODE,
+                [
+                    'type' => Table::TYPE_TEXT,
+                    'nullable' => true,
+                    'default' => null,
+                    'length' => 255,
+                    'comment' => 'Ruc Number',
+                    'after' => 'reference_note'
+                ]
+            );
+
+            $connection->addColumn(
+                $setup->getTable('sales_order_address'),
+                HelperData::RUC_NUMBER_ATTRIBUTE_CODE,
+                [
+                    'type' => Table::TYPE_TEXT,
+                    'nullable' => true,
+                    'default' => null,
+                    'length' => 255,
+                    'comment' => 'Ruc Number',
+                    'after' => 'reference_note'
+                ]
+            );
 
             // Reference Address Field
             $connection->addColumn(
